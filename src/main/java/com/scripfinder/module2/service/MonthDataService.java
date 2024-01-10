@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.scripfinder.module2.dto.Candle;
 
-public interface ScripMonthDataService {
+public interface MonthDataService {
 
     String save(String scripName,List<Candle> candles);
 

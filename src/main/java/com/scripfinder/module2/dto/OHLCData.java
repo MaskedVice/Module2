@@ -1,6 +1,6 @@
 package com.scripfinder.module2.dto;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +13,10 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class MonthRequestData {
-        private String scripName;
-        private List<Candle> candles;     
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class OHLCData {
+    private Double open;
+    private Double high;
+    private Double low;
+    private Double close;
 }

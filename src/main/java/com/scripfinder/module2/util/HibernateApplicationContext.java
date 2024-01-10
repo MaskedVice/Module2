@@ -33,14 +33,6 @@ import com.zaxxer.hikari.HikariDataSource;
 public class HibernateApplicationContext {
     
     private static final String AUTOCOMMIT = "hibernate.connection.autocommit";
-    private static final String FORMAT_SQL = "hibernate.format_sql";
-    private static final String AUTO_DDL = "hibernate.hbm2ddl.auto";
-    private static final String SHOW_SQL = "hibernate.show_sql";
-    private static final String CONTEXT_CLASS = "hibernate.current_session_context_class";
-    private static final String DIALECT = "hibernate.dialect";
-    private static final String NULLABLE = "hibernate.proc.param_null_passing";
-    private static final String DRIVER_CLASS = "hibernate.driver_class";
-    private static final String LEZI = "hibernate.temp.use_jdbc_metadata_defaults";
 
     @Value("${mainDataBase.user}")
     private String userName;
